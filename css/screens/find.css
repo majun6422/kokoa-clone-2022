@@ -1,0 +1,135 @@
+
+
+.recommend-friends{
+    padding: 24px 0px;
+    margin: 24px 0;
+    border-top:  var(--main-border);
+    border-bottom:  var(--main-border);
+}
+
+.recommend-friends__title{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.36);
+}
+
+.recommend-friends span{
+    margin: 100px 0;
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.36);
+    font-size: 22px;
+}
+
+.open-chat__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.open-chat__title{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.open-chat__header span{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.22);
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: var(--main-border);
+    
+    
+    
+}
+
+.open-post__title{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.open-post__hashtags{
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.44);
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.open-post__members{
+    display: flex;
+    align-items: center;
+}
+
+.open-post__members img{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.open-chat__member-count{
+    opacity: 0.4;
+    font-size: 14px;
+}
+
+.open-post__members .divider{
+    width: 2px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 6px;
+}
+
+.open-chat__member-status{
+    color : #f37fc5;
+    font-weight: 500;
+    
+}
+
+.open-post__photo{
+    position: relative;
+}
+.open-post__photo img{
+    width: 114px;
+    height: 114px;
+    border-radius: 12%;
+}
+
+.open-post__heart-count{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 6px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 6px;
+}
+
+.open-post__heart-count span{
+    margin-left: 3px;
+}
+
+@keyframes heartBeat {
+    0%{
+        color: white;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.1);
+    }
+    100%{
+        color: white;
+    }
+}
+
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 1.4s linear infinite;
+}
